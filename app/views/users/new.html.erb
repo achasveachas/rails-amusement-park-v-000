@@ -1,0 +1,17 @@
+<%= form_for @user do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  <%= f.label :height, "Height (in inches)" %><br>
+  <%= f.text_field :height %><br>
+  <%= f.label :happiness, "On a scale from 1-5, how happy are you?" %><br>
+  <%= f.text_field :happiness %><br>
+  <%= f.label :nausea, "On a scale from 1-5, how nauseous are you?" %><br>
+  <%= f.text_field :nausea %><br>
+  <%= f.label :tickets, "How many dollars do you have to spend on rides today?" %><br>
+  <%= f.number_field :tickets %><br>
+  <%= f.label :password, "Please chose a password" %><br>
+  <%= f.password_field :password %><br>
+  <%= f.label :admin, "I'm an admin" %><br>
+  <%= f.check_box :admin %><br><br>
+  <%= f.submit %>
+<% end %>
